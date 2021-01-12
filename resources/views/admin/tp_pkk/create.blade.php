@@ -3,7 +3,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-7 align-self-center">
-                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan BUM!</h3>
+                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan tp-pkk!</h3>
             </div>
             <div class="col-5 align-self-center">
                 <div class="bg-white border-0 custom-shadow custom-radius float-right p-3">
@@ -35,13 +35,13 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <div class="card-header bg-info text-white">Data bum</div>
+                    <div class="card-header bg-info text-white">Data tp-pkk</div>
                     <div class="card-body">
-                        <form action="{{ route('bum.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('tp-pkk.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group row">
                                 <div class="col">
-                                    <label>Bumdes</label>
+                                    <label>tp-pkkdes</label>
                                     <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
                                     @error('nama')
                                         <span class="invalid-feedback" role="alert">
@@ -68,7 +68,7 @@
                                         </span>
                                     @enderror
                             </div>
-                            <button type="submit" class="btn btn-success mt-2 d-block w-100">Buat Bumdes</button>
+                            <button type="submit" class="btn btn-success mt-2 d-block w-100">Buat tp-pkkdes</button>
                         </form>
                     </div>
                 </div>

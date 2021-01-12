@@ -3,7 +3,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-7 align-self-center">
-                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan hukum!</h3>
+                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan catatanKeluarga!</h3>
             </div>
             <div class="col-5 align-self-center">
                 <div class="bg-white border-0 custom-shadow custom-radius float-right p-3">
@@ -35,15 +35,15 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <div class="card-header bg-info text-white">Data hukum</div>
+                    <div class="card-header bg-info text-white">Data Catatan Keluarga</div>
                     <div class="card-body">
-                        <form action="{{ route('hukum.update',['hukum'=>$hukum->id]) }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('catatan-keluarga.update',['catatanKeluarga'=>$catatanKeluarga->id]) }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <label>Jenis</label>
-                                    <input type="text" name="jenis" class="form-control @error('jenis') is-invalid @enderror" value="{{ $hukum->jenis }}">
+                                    <input type="text" name="jenis" class="form-control @error('jenis') is-invalid @enderror" value="{{ $catatanKeluarga->jenis }}">
                                     @error('jenis')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label>Nomor</label>
-                                    <input type="text" name="nomor" class="form-control @error('nomor') is-invalid @enderror" value="{{ $hukum->nomor }}">
+                                    <input type="text" name="nomor" class="form-control @error('nomor') is-invalid @enderror" value="{{ $catatanKeluarga->nomor }}">
                                     @error('nomor')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -63,7 +63,7 @@
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <label>Ditetapkan</label>
-                                    <input type="date" name="ditetapkan" class="form-control @error('ditetapkan') is-invalid @enderror" value="{{ $hukum->ditetapkan }}">
+                                    <input type="date" name="ditetapkan" class="form-control @error('ditetapkan') is-invalid @enderror" value="{{ $catatanKeluarga->ditetapkan }}">
                                     @error('ditetapkan')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label>Diundangkan</label>
-                                    <input type="date" name="diundangkan" class="form-control @error('diundangkan') is-invalid @enderror" value="{{ $hukum->diundangkan }}">
+                                    <input type="date" name="diundangkan" class="form-control @error('diundangkan') is-invalid @enderror" value="{{ $catatanKeluarga->diundangkan }}">
                                     @error('diundangkan')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -82,7 +82,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Tentang</label>
-                                <textarea name="tentang" cols="30" rows="5" class="form-control @error('tentang') is-invalid @enderror">{{ $hukum->tentang }}</textarea>
+                                <textarea name="tentang" cols="30" rows="5" class="form-control @error('tentang') is-invalid @enderror">{{ $catatanKeluarga->tentang }}</textarea>
                                     @error('tentang')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -90,7 +90,7 @@
                                     @enderror
                             </div>
                             <input type="file" name="file">
-                            <button type="submit" class="btn btn-success mt-3 d-block w-100">Buat hukum</button>
+                            <button type="submit" class="btn btn-success mt-3 d-block w-100">Buat catatanKeluarga</button>
                         </form>
                     </div>
                 </div>

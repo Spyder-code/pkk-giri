@@ -15,7 +15,8 @@ class DataKeluargaController extends Controller
      */
     public function index()
     {
-        //
+        $data = dataKeluarga::all();
+        return view('admin.data_keluarga.index',compact('data'));
     }
 
     /**
@@ -25,7 +26,7 @@ class DataKeluargaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.data_keluarga.create');
     }
 
     /**
@@ -47,7 +48,7 @@ class DataKeluargaController extends Controller
      */
     public function show(dataKeluarga $dataKeluarga)
     {
-        //
+        return view('admin.data_keluarga.show',compact('dataKeluarga'));
     }
 
     /**
@@ -58,7 +59,7 @@ class DataKeluargaController extends Controller
      */
     public function edit(dataKeluarga $dataKeluarga)
     {
-        //
+        return view('admin.data_keluarga.edit',compact('dataKeluarga'));
     }
 
     /**

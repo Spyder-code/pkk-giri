@@ -15,7 +15,8 @@ class CatatanKeluargaController extends Controller
      */
     public function index()
     {
-        //
+        $data = catatanKeluarga::all();
+        return view('admin.catatan_keluarga.index',compact('data'));
     }
 
     /**
@@ -25,7 +26,7 @@ class CatatanKeluargaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.catatan_keluarga.create');
     }
 
     /**
@@ -47,7 +48,7 @@ class CatatanKeluargaController extends Controller
      */
     public function show(catatanKeluarga $catatanKeluarga)
     {
-        //
+        return view('admin.catatan_keluarga.show',compact('catatanKeluarga'));
     }
 
     /**
@@ -58,7 +59,7 @@ class CatatanKeluargaController extends Controller
      */
     public function edit(catatanKeluarga $catatanKeluarga)
     {
-        //
+        return view('admin.catatan_keluarga.edit',compact('catatanKeluarga'));
     }
 
     /**

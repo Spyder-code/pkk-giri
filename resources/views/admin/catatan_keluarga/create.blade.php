@@ -3,7 +3,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-7 align-self-center">
-                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan hukum!</h3>
+                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan catatan-keluarga!</h3>
             </div>
             <div class="col-5 align-self-center">
                 <div class="bg-white border-0 custom-shadow custom-radius float-right p-3">
@@ -35,9 +35,9 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <div class="card-header bg-info text-white">Data hukum</div>
+                    <div class="card-header bg-info text-white">Data catatan-keluarga</div>
                     <div class="card-body">
-                        <form action="{{ route('hukum.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('catatan-keluarga.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group row">
                                 <div class="col-sm-6">
@@ -89,7 +89,7 @@
                                     @enderror
                             </div>
                             <input type="file" name="file">
-                            <button type="submit" class="btn btn-success mt-3 d-block w-100">Buat hukum</button>
+                            <button type="submit" class="btn btn-success mt-3 d-block w-100">Buat catatan-keluarga</button>
                         </form>
                     </div>
                 </div>

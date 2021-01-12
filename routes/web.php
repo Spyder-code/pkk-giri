@@ -41,6 +41,7 @@ Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::resource('data-keluarga', 'Admin\DataKeluargaController');
     Route::resource('ibu-hamil', 'Admin\IbuHamilController');
     Route::resource('tp-pkk', 'Admin\TpPkkController');
+    Route::get('/profile', 'HomeController@profile')->name('profile');
 });
 
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');

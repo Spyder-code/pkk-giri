@@ -15,7 +15,8 @@ class DataKegiatanController extends Controller
      */
     public function index()
     {
-        //
+        $data = dataKegiatan::all();
+        return view('admin.data_kegiatan.index',compact('data'));
     }
 
     /**
@@ -25,7 +26,7 @@ class DataKegiatanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.data_kegiatan.create');
     }
 
     /**
@@ -47,7 +48,7 @@ class DataKegiatanController extends Controller
      */
     public function show(dataKegiatan $dataKegiatan)
     {
-        //
+        return view('admin.data_kegiatan.show',compact('dataKegiatan'));
     }
 
     /**
@@ -58,7 +59,7 @@ class DataKegiatanController extends Controller
      */
     public function edit(dataKegiatan $dataKegiatan)
     {
-        //
+        return view('admin.data_kegiatan.edit',compact('dataKegiatan'));
     }
 
     /**

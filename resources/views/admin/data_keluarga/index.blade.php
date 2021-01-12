@@ -9,13 +9,19 @@
                             <div class="d-inline-flex align-items-center">
                                 <h2 class="text-dark mb-1 font-weight-medium">{{ $data->count() }}</h2>
                             </div>
-                            <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Jumlah semua data</h6>
+                            <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Jumlah semua data-keluargaan</h6>
                         </div>
                         <div class="ml-auto mt-md-3 mt-lg-0">
                             <span class="opacity-7 text-muted"><i data-feather="box"></i></span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <a href="{{ route('data-keluarga.create') }}" class="btn btn-success">Tambah data</a>
             </div>
         </div>
 
@@ -29,65 +35,41 @@
             </div>
         </div>
         @endif
-        @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif
-
-        <div class="row">
-            <div class="col">
-                <div class="card border border-success">
-                    <div class="card-header bg-success text-white">Tambah data</div>
-                    <div class="card-body">
-                        <form action="{{ route('kesehatan.update',['kesehatan'=>1]) }}" method="POST">
-                            @csrf
-                            @method('PUT')
-                            <div class="form-group row">
-                                <div class="col">
-                                    <label>Sehat</label>
-                                    <input type="number" name="sehat" value="{{ $kesehatan->sehat }}" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <label>Sakit</label>
-                                    <input type="number" name="sakit" value="{{ $kesehatan->sakit }}" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <label>Hamil</label>
-                                    <input type="number" name="hamil" value="{{ $kesehatan->hamil }}" class="form-control">
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-success mt-2 w-100">update data</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="row">
             <div class="col">
                 <div class="card border border-primary">
-                    <div class="card-header bg-primary text-white">List data</div>
+                    <div class="card-header bg-primary text-white">List data-keluargaan</div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table id="zero_config" class="table table-striped table-bordered no-wrap">
                                 <thead>
                                     <tr>
-                                        <th>Sehat</th>
-                                        <th>Sakit</th>
-                                        <th>Hamil</th>
+                                        <th>No</th>
+                                        <th>Nama instansi/organisasi</th>
+                                        <th>Kegiatan</th>
+                                        <th>Jumlah peserta</th>
+                                        <th>Tanggal data-keluargaan</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach ($data as $item)
                                     <tr>
-                                        <td>{{ $item->sehat }}</td>
-                                        <td>{{ $item->sakit }}</td>
-                                        <td>{{ $item->hamil }}</td>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $item->nama }}</td>
+                                        <td>{{ $item->kegiatan }}</td>
+                                        <td>{{ $item->jumlah }}</td>
+                                        <td>{{ date('d F Y', strtotime($item->tanggal)) }}</td>
+                                        <td class="d-flex justify-content-center">
+                                            {{-- <a href="{{ route('data-keluarga.show',['data-keluarga'=>$item->id]) }}" class="btn btn-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Detail data-keluarga"><i class="text-white fas fa-search"></i></a> --}}
+                                            <form action="{{ route('data-keluarga.destroy',['data-keluarga'=>$item->id]) }}" method="post">
+                                                @method('DELETE')
+                                                @csrf
+                                                <button type="submit" class="btn btn-danger mr-2" onclick="return confirm('Are you sure?')" data-toggle="tooltip" data-placement="bottom" title="Hapus data-keluarga"><i class="text-white fas fa-trash-alt"></i></button>
+                                            </form>
+                                            <a href="{{ route('data-keluarga.edit',['data-keluarga'=>$item->id]) }}" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Edit data-keluarga"><i class="text-white fas fa-pencil-alt"></i></a>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>

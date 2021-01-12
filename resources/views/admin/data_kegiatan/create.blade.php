@@ -3,7 +3,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-7 align-self-center">
-                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan kunjung!</h3>
+                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan data-kegiatan!</h3>
             </div>
             <div class="col-5 align-self-center">
                 <div class="bg-white border-0 custom-shadow custom-radius float-right p-3">
@@ -35,9 +35,9 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <div class="card-header bg-info text-white">Data kunjungan</div>
+                    <div class="card-header bg-info text-white">Data data-kegiatanan</div>
                     <div class="card-body">
-                        <form action="{{ route('kunjung.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('data-kegiatan.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group row">
                                 <div class="col-sm-6">
@@ -78,7 +78,7 @@
                                     @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-success d-block mt-3 w-100">Buat kunjung</button>
+                            <button type="submit" class="btn btn-success d-block mt-3 w-100">Buat data-kegiatan</button>
                         </form>
                     </div>
                 </div>

@@ -21,7 +21,7 @@
 
         <div class="row mb-3">
             <div class="col">
-                <a href="{{ route('berita.create') }}" class="btn btn-success">Tambah data</a>
+                <a href="{{ route('ibu-hamil.create') }}" class="btn btn-success">Tambah data</a>
             </div>
         </div>
 
@@ -39,7 +39,7 @@
         <div class="row">
             <div class="col">
                 <div class="card border border-primary">
-                    <div class="card-header bg-primary text-white">List Berita</div>
+                    <div class="card-header bg-primary text-white">List ibu-hamil</div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table id="zero_config" class="table table-striped table-bordered no-wrap">
@@ -60,13 +60,13 @@
                                         <td>{{ substr($item->deskripsi,0,30 ) }}</td>
                                         <td><img src="{{ $item->image }}" class="img-fluid" style="height: 100px"></td>
                                         <td class="d-flex justify-content-center">
-                                            <a href="{{ route('berita.show',['beritum'=>$item->id]) }}" class="btn btn-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Detail berita"><i class="text-white fas fa-search"></i></a>
-                                            <form action="{{ route('berita.destroy',['beritum'=>$item->id]) }}" method="post">
+                                            <a href="{{ route('ibu-hamil.show',['beritum'=>$item->id]) }}" class="btn btn-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Detail ibu-hamil"><i class="text-white fas fa-search"></i></a>
+                                            <form action="{{ route('ibu-hamil.destroy',['beritum'=>$item->id]) }}" method="post">
                                                 @method('DELETE')
                                                 @csrf
-                                                <button type="submit" class="btn btn-danger mr-2" onclick="return confirm('Are you sure?')" data-toggle="tooltip" data-placement="bottom" title="Hapus berita"><i class="text-white fas fa-trash-alt"></i></button>
+                                                <button type="submit" class="btn btn-danger mr-2" onclick="return confirm('Are you sure?')" data-toggle="tooltip" data-placement="bottom" title="Hapus ibu-hamil"><i class="text-white fas fa-trash-alt"></i></button>
                                             </form>
-                                            <a href="{{ route('berita.edit',['beritum'=>$item->id]) }}" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Edit berita"><i class="text-white fas fa-pencil-alt"></i></a>
+                                            <a href="{{ route('ibu-hamil.edit',['beritum'=>$item->id]) }}" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Edit ibu-hamil"><i class="text-white fas fa-pencil-alt"></i></a>
                                         </td>
                                     </tr>
                                     @endforeach

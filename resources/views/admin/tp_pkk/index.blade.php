@@ -21,7 +21,7 @@
 
         <div class="row mb-3">
             <div class="col">
-                <a href="{{ route('bum.create') }}" class="btn btn-success">Tambah data</a>
+                <a href="{{ route('tp-pkk.create') }}" class="btn btn-success">Tambah data</a>
             </div>
         </div>
 
@@ -39,14 +39,14 @@
         <div class="row">
             <div class="col">
                 <div class="card border border-primary">
-                    <div class="card-header bg-primary text-white">List Bumdes</div>
+                    <div class="card-header bg-primary text-white">List tp-pkkdes</div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table id="zero_config" class="table table-striped table-bordered no-wrap">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Bumdes</th>
+                                        <th>tp-pkkdes</th>
                                         <th>Saldo</th>
                                         <th>Tahun</th>
                                         <th>Action</th>
@@ -60,13 +60,13 @@
                                         <td>Rp. {{ $item->saldo }}</td>
                                         <td>{{ $item->tahun }}</td>
                                         <td class="d-flex justify-content-center">
-                                            <a href="{{ route('bum.show',['bum'=>$item->id]) }}" class="btn btn-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Detail bum"><i class="text-white fas fa-search"></i></a>
-                                            <form action="{{ route('bum.destroy',['bum'=>$item->id]) }}" method="post">
+                                            <a href="{{ route('tp-pkk.show',['tp-pkk'=>$item->id]) }}" class="btn btn-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Detail tp-pkk"><i class="text-white fas fa-search"></i></a>
+                                            <form action="{{ route('tp-pkk.destroy',['tp-pkk'=>$item->id]) }}" method="post">
                                                 @method('DELETE')
                                                 @csrf
-                                                <button type="submit" class="btn btn-danger mr-2" onclick="return confirm('Are you sure?')" data-toggle="tooltip" data-placement="bottom" title="Hapus bum"><i class="text-white fas fa-trash-alt"></i></button>
+                                                <button type="submit" class="btn btn-danger mr-2" onclick="return confirm('Are you sure?')" data-toggle="tooltip" data-placement="bottom" title="Hapus tp-pkk"><i class="text-white fas fa-trash-alt"></i></button>
                                             </form>
-                                            <a href="{{ route('bum.edit',['bum'=>$item->id]) }}" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Edit bum"><i class="text-white fas fa-pencil-alt"></i></a>
+                                            <a href="{{ route('tp-pkk.edit',['tp-pkk'=>$item->id]) }}" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Edit tp-pkk"><i class="text-white fas fa-pencil-alt"></i></a>
                                         </td>
                                     </tr>
                                     @endforeach

@@ -15,7 +15,8 @@ class IbuHamilController extends Controller
      */
     public function index()
     {
-        //
+        $data = ibuHamil::all();
+        return view('admin.ibu_hamil.index',compact('data'));
     }
 
     /**
@@ -25,7 +26,7 @@ class IbuHamilController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.ibu_hamil.create');
     }
 
     /**
@@ -47,7 +48,7 @@ class IbuHamilController extends Controller
      */
     public function show(ibuHamil $ibuHamil)
     {
-        //
+        return view('admin.ibu_hamil.show',compact('ibuHamil'));
     }
 
     /**
@@ -58,7 +59,7 @@ class IbuHamilController extends Controller
      */
     public function edit(ibuHamil $ibuHamil)
     {
-        //
+        return view('admin.ibu_hamil.edit',compact('ibuHamil'));
     }
 
     /**

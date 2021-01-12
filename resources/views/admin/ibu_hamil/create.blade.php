@@ -10,7 +10,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-7 align-self-center">
-                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan berita!</h3>
+                <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Tambahkan ibu-hamil!</h3>
             </div>
             <div class="col-5 align-self-center">
                 <div class="bg-white border-0 custom-shadow custom-radius float-right p-3">
@@ -42,13 +42,13 @@
         <div class="row">
             <div class="col">
                 <div class="card">
-                    <div class="card-header bg-info text-white">Data berita</div>
+                    <div class="card-header bg-info text-white">Data ibu-hamil</div>
                     <div class="card-body">
-                        <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('ibu-hamil.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group row">
                                 <div class="col-sm-12">
-                                    <label>Nama berita</label>
+                                    <label>Nama ibu-hamil</label>
                                     <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
                                     @error('nama')
                                         <span class="invalid-feedback" role="alert">
@@ -67,7 +67,7 @@
                                     @enderror
                             </div>
                             <input type="file" name="image">
-                            <button type="submit" class="btn btn-success d-block w-100 mt-3">Buat berita</button>
+                            <button type="submit" class="btn btn-success d-block w-100 mt-3">Buat ibu-hamil</button>
                         </form>
                     </div>
                 </div>

@@ -34,16 +34,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $produk = Produk::all()->count();
-        $hukum = Hukum::all()->count();
-        $pertanian = Pertanian::all()->count();
-        $berita = Berita::all()->count();
-        $wisata = Wisata::all()->count();
-        $kunjung = Kunjung::all()->count();
-        $bum = Bum::all()->count();
-        $rpjm = Rpjm::all()->count();
-        $rkp = Rkp::all()->count();
-        return view('admin.dashboard',compact('produk','hukum','pertanian','berita','wisata','kunjung','bum','rpjm','rkp'));
+        return view('admin.dashboard');
     }
 
     public function profile()

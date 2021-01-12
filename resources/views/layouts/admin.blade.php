@@ -146,90 +146,30 @@
                             aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
                                 class="hide-menu">Dashboard</span></a></li>
                     <li class="list-divider"></li>
-                    <li class="nav-small-cap"><span class="hide-menu">Produk</span></li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('hukum.index') }}"
+                    <li class="nav-small-cap"><span class="hide-menu">Data</span></li>
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('catatan-keluarga.index') }}"
                         aria-expanded="false"><i data-feather="award" class="feather-icon"></i><span
-                            class="hide-menu">Produk Hukum
+                            class="hide-menu">Catatan Keluarga
                         </span></a>
                     </li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('produk.index') }}"
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('data-kegiatan.index') }}"
                             aria-expanded="false"><i data-feather="archive" class="feather-icon"></i><span
-                                class="hide-menu">Produk Desa
+                                class="hide-menu">Data Kegiatan
                             </span></a>
                     </li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('pertanian.index') }}"
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('data-keluarga.index') }}"
                         aria-expanded="false"><i data-feather="wind" class="feather-icon"></i><span
-                            class="hide-menu">Pertanian/Peternakan
+                            class="hide-menu">Data Keluarga
                         </span></a>
                     </li>
-                    <li class="list-divider"></li>
-                    <li class="nav-small-cap"><span class="hide-menu">Informasi</span></li>
-                    <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
-                        aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
-                            class="hide-menu">Penduduk </span></a>
-                    <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                        <li class="sidebar-item"><a href="{{ route('penduduk.pekerjaan') }}" class="sidebar-link"><span
-                                    class="hide-menu"> Pekerjaan
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"><a href="{{ route('penduduk.umur') }}" class="sidebar-link"><span
-                                    class="hide-menu"> Rentang umur
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"><a href="{{ route('penduduk.agama') }}" class="sidebar-link"><span
-                                    class="hide-menu"> Agama
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"><a href="{{ route('penduduk.pendidikan') }}" class="sidebar-link"><span
-                                    class="hide-menu"> Pendidikan
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"><a href="{{ route('penduduk.dusun') }}" class="sidebar-link"><span
-                                    class="hide-menu"> Dusun
-                                </span></a>
-                        </li>
-                        <li class="sidebar-item"><a href="{{ route('penduduk.perkawinan') }}" class="sidebar-link"><span
-                                    class="hide-menu"> Status perkawinan
-                                </span></a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('wisata.index') }}"
-                            aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span class="hide-menu">Wisata</span></a>
-                    </li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('berita.index') }}"
-                            aria-expanded="false"><i data-feather="plus-square" class="feather-icon"></i><span
-                                class="hide-menu">Berita</span></a></li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('kunjung.index') }}"
-                            aria-expanded="false"><i data-feather="users" class="feather-icon"></i><span
-                                class="hide-menu">Jadwal Kunjung
-                            </span></a>
-                    </li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('bum.index') }}"
-                            aria-expanded="false"><i data-feather="user-check" class="feather-icon"></i><span
-                                class="hide-menu">BUM Desa
-                            </span></a>
-                    </li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('kesehatan.index') }}"
-                            aria-expanded="false"><i data-feather="heart" class="feather-icon"></i><span
-                                class="hide-menu">Kesehatan
-                            </span></a>
-                    </li>
-                    <li class="list-divider"></li>
-                    <li class="nav-small-cap"><span class="hide-menu">Pembangunan</span></li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('rpjm.index') }}"
-                        aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
-                            class="hide-menu">RPJM Desa
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('ibu-hamil.index') }}"
+                        aria-expanded="false"><i data-feather="wind" class="feather-icon"></i><span
+                            class="hide-menu">Ibu Hamil
                         </span></a>
                     </li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('rkp.index') }}"
-                        aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
-                            class="hide-menu">RKP Desa
-                        </span></a>
-                    </li>
-                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('apb.index') }}"
-                        aria-expanded="false"><i data-feather="sidebar" class="feather-icon"></i><span
-                            class="hide-menu">APB Desa
+                    <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="{{ route('tp-pkk.index') }}"
+                        aria-expanded="false"><i data-feather="wind" class="feather-icon"></i><span
+                            class="hide-menu">Tim Pengerak PKK
                         </span></a>
                     </li>
                     <li class="list-divider"></li>

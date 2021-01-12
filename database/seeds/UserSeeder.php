@@ -14,7 +14,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Desa Sukolilo Kecamatan Wajak',
+            'name' => 'Admin',
             'email' => 'admin@yahoo.com',
             'password' => Hash::make('admin123'),
         ]);

@@ -16,7 +16,7 @@
                                         <label for="">:</label>
                                     </div>
                                     <div class="col">
-                                        {{$hukum->nomor}}
+                                        {{$catatanKeluarga->nomor}}
                                     </div>
                                 </div>
                             </li>
@@ -29,7 +29,7 @@
                                         <label for="">:</label>
                                     </div>
                                     <div class="col">
-                                        {{$hukum->jenis}}
+                                        {{$catatanKeluarga->jenis}}
                                     </div>
                                 </div>
                             </li>
@@ -42,7 +42,7 @@
                                         <label for="">:</label>
                                     </div>
                                     <div class="col">
-                                        {{$hukum->tentang}}
+                                        {{$catatanKeluarga->tentang}}
                                     </div>
                                 </div>
                             </li>
@@ -55,7 +55,7 @@
                                         <label for="">:</label>
                                     </div>
                                     <div class="col">
-                                        {{ date('d F Y', strtotime($hukum->ditetapkan)) }}
+                                        {{ date('d F Y', strtotime($catatanKeluarga->ditetapkan)) }}
                                     </div>
                                 </div>
                             </li>
@@ -68,7 +68,7 @@
                                         <label for="">:</label>
                                     </div>
                                     <div class="col">
-                                        {{ date('d F Y', strtotime($hukum->diundangkan)) }}
+                                        {{ date('d F Y', strtotime($catatanKeluarga->diundangkan)) }}
                                     </div>
                                 </div>
                             </li>
@@ -79,7 +79,7 @@
         </div>
         <div class="row">
             <div class="col text-center">
-                <iframe src="https://docs.google.com/viewer?url={{ $hukum->file }}&embedded=true" frameborder="0" height="500px" width="100%"></iframe>
+                <iframe src="https://docs.google.com/viewer?url={{ $catatanKeluarga->file }}&embedded=true" frameborder="0" height="500px" width="100%"></iframe>
             </div>
         </div>
     </div>

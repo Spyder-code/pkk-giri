@@ -21,7 +21,7 @@
 
         <div class="row mb-3">
             <div class="col">
-                <a href="{{ route('hukum.create') }}" class="btn btn-success">Tambah data</a>
+                <a href="{{ route('catatan-keluarga.create') }}" class="btn btn-success">Tambah data</a>
             </div>
         </div>
 
@@ -66,13 +66,13 @@
                                         <td>{{ date('d F Y', strtotime($item->diundangkan)) }}</td>
                                         <td><a href="{{ $item->file }}" class="btn btn-success"><i class="fas fa-download"></i></a></td>
                                         <td class="d-flex justify-content-center">
-                                            <a href="{{ route('hukum.show',['hukum'=>$item->id]) }}" class="btn btn-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Detail hukum"><i class="text-white fas fa-search"></i></a>
-                                            <form action="{{ route('hukum.destroy',['hukum'=>$item->id]) }}" method="post">
+                                            <a href="{{ route('catatan-keluarga.show',['catatan-keluarga'=>$item->id]) }}" class="btn btn-warning mr-2" data-toggle="tooltip" data-placement="bottom" title="Detail catatan-keluarga"><i class="text-white fas fa-search"></i></a>
+                                            <form action="{{ route('catatan-keluarga.destroy',['catatan-keluarga'=>$item->id]) }}" method="post">
                                                 @method('DELETE')
                                                 @csrf
-                                                <button type="submit" class="btn btn-danger mr-2" onclick="return confirm('Are you sure?')" data-toggle="tooltip" data-placement="bottom" title="Hapus hukum"><i class="text-white fas fa-trash-alt"></i></button>
+                                                <button type="submit" class="btn btn-danger mr-2" onclick="return confirm('Are you sure?')" data-toggle="tooltip" data-placement="bottom" title="Hapus catatan-keluarga"><i class="text-white fas fa-trash-alt"></i></button>
                                             </form>
-                                            <a href="{{ route('hukum.edit',['hukum'=>$item->id]) }}" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Edit hukum"><i class="text-white fas fa-pencil-alt"></i></a>
+                                            <a href="{{ route('catatan-keluarga.edit',['catatan-keluarga'=>$item->id]) }}" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Edit catatan-keluarga"><i class="text-white fas fa-pencil-alt"></i></a>
                                         </td>
                                     </tr>
                                     @endforeach

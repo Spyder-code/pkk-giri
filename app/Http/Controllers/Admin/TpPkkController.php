@@ -15,7 +15,8 @@ class TpPkkController extends Controller
      */
     public function index()
     {
-        //
+        $data = tpPkk::all();
+        return view('admin.tp_pkk.index',compact('data'));
     }
 
     /**
@@ -25,7 +26,7 @@ class TpPkkController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.tp_pkk.create');
     }
 
     /**
@@ -47,7 +48,7 @@ class TpPkkController extends Controller
      */
     public function show(tpPkk $tpPkk)
     {
-        //
+        return view('admin.tp_pkk.show',compact('tpPkk'));
     }
 
     /**
@@ -58,7 +59,7 @@ class TpPkkController extends Controller
      */
     public function edit(tpPkk $tpPkk)
     {
-        //
+        return view('admin.tp_pkk.edit',compact('tpPkk'));
     }
 
     /**
