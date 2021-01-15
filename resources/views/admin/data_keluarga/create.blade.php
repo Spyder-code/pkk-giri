@@ -161,16 +161,16 @@
                         <td class="tg-c3ow">10</td>
                       </tr>
                       <tr>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
-                        <td class="tg-0pky"></td>
+                        <td class="tg-0pky">a</td>
+                        <td class="tg-0pky"><input type="text" name="no_reg" id=""></td>
+                        <td class="tg-0pky"><input type="text" name="nama_anggota_keluarga" id=""></td>
+                        <td class="tg-0pky"><input type="text" name="status_dalam_keluarga" id=""></td>
+                        <td class="tg-0pky"><input type="text" name="status_dalam_perkawinan" id=""></td>
+                        <td class="tg-0pky"><input type="text" name="jenis_kelamin_l" id=""></td>
+                        <td class="tg-0pky"><input type="text" name="jenis_kelamin_p" id=""></td>
+                        <td class="tg-0pky"><input type="text" name="tanggal_lahir/umur" id=""></td>
+                        <td class="tg-0pky"><input type="text" name="pendidikan" id=""></td>
+                        <td class="tg-0pky"><input type="text" name="pekerjaan" id=""></td>
                       </tr>
                       <tr>
                         <td class="tg-0pky"></td>
@@ -221,9 +221,9 @@
                           </tr>
                           <tr>
                             <td class="tg-0pky"></td>
-                            <td class="tg-0pky"></td>
-                            <td class="tg-0pky"></td>
-                            <td class="tg-0pky"></td>
+                            <td class="tg-0pky"><input type="text" name="kategori" id=""></td>
+                            <td class="tg-0pky"><input type="text" name="komoditi" id=""></td>
+                            <td class="tg-0pky"><input type="text" name="jumlah" id=""></td>
                           </tr>
                           <tr>
                             <td class="tg-0pky"></td>
@@ -275,9 +275,9 @@
                               </tr>
                               <tr>
                                 <td class="tg-0pky"></td>
-                                <td class="tg-0pky"></td>
-                                <td class="tg-0pky"></td>
-                                <td class="tg-0pky"></td>
+                                <td class="tg-0pky"><input type="text" name="kategori" id=""></td>
+                                <td class="tg-0pky"><input type="text" name="komoditi" id=""></td>
+                                <td class="tg-0pky"><input type="text" name="jumlah" id=""></td>
                               </tr>
                               <tr>
                                 <td class="tg-0pky"></td>
