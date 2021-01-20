@@ -37,6 +37,7 @@ class CreateDataKegiatansTable extends Migration
             $table->string('tidak_sehat_layak_huni');
             $table->string('memiliki_temp_pemb_sampah');
             $table->string('memiliki_spal');
+            $table->string('memiliki_jamban_keluarga');
             $table->string('menempel_stiker_p4k');
             $table->string('sumber_air_pdam');
             $table->string('sumber_air_sumur');

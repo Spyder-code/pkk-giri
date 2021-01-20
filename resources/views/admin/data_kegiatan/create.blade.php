@@ -39,8 +39,8 @@
                         <div class="form-group row">
                             <div class="col-sm-8">
                                 <label>Desa wisma</label>
-                                <input type="text" name="desa_wisma" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                @error('nama')
+                                <input type="text" name="desa_wisma" class="form-control @error('desa_wisma') is-invalid @enderror" value="{{ old('desa_wisma') }}">
+                                @error('desa_wisma')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -48,8 +48,8 @@
                             </div>
                             <div class="col-2">
                                 <label>RT</label>
-                                <input type="text" name="rt" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                @error('nama')
+                                <input type="text" name="rt" class="form-control @error('rt') is-invalid @enderror" value="{{ old('rt') }}">
+                                @error('rt')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -57,8 +57,8 @@
                             </div>
                             <div class="col-2">
                                 <label>RW</label>
-                                <input type="text" name="rw" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                @error('nama')
+                                <input type="text" name="rw" class="form-control @error('rw') is-invalid @enderror" value="{{ old('rw') }}">
+                                @error('rw')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -68,8 +68,8 @@
                         <div class="form-group row">
                             <div class="col-sm">
                                 <label>Desa/Kelurahan</label>
-                                <input type="text" name="desa_wisma" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                @error('nama')
+                                <input type="text" name="desa/kelurahan" class="form-control @error('desa/kelurahan') is-invalid @enderror" value="{{ old('desa/kelurahan') }}">
+                                @error('desa/kelurahan')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -77,8 +77,8 @@
                             </div>
                             <div class="col">
                                 <label>Tahun</label>
-                                <input type="number" name="rt" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                @error('nama')
+                                <input type="number" name="tahun" class="form-control @error('tahun') is-invalid @enderror" value="{{ old('tahun') }}">
+                                @error('tahun')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
