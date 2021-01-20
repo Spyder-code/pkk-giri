@@ -402,6 +402,184 @@
                                         TIDAK
                                     </label>
                             </div>
+                            <label><b>Kegiatan Warga</b></label>
+                            <div class="row">
+                                <div class="col">
+                                    <style type="text/css">
+                                        .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+                                        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                          overflow:hidden;padding:10px 5px;word-break:normal;}
+                                        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                        .tg .tg-n533{background-color:#dae8fc;border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+                                        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+                                        @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+                                        <div class="tg-wrap"><table class="tg">
+                                        <tbody>
+                                          <tr>
+                                            <td class="tg-n533">NO</td>
+                                            <td class="tg-n533">KEGIATAN</td>
+                                            <td class="tg-n533">AKTIVITAS<br>(Y/T)</td>
+                                            <td class="tg-n533">KETERANGAN<br>(Jenis Kegiatan Yang Diikuti)</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="tg-0pky">1</td>
+                                            <td class="tg-0pky">Penghayatan dan Pengamalan Pancasila</td>
+                                            <td class="tg-0pky">
+                                                <label class="form-check-label" style="margin-right:20px" for="flexRadioDefault1">
+                                                    <input type="radio" name="aktivitas_penghayatan" value="Y">
+                                                    Y
+                                                </label>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input type="radio" name="aktivitas_penghayatan" value="T"> 
+                                                    T
+                                                </label>
+                                            </td>
+                                            <td class="tg-0pky">
+                                                <input type="text" name="ket_penghayatan" class="form-control @error('ket_penghayatan') is-invalid @enderror" value="{{ old('ket_penghayatan') }}">
+                                    @error('ket_penghayatan')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="tg-0pky">2</td>
+                                            <td class="tg-0pky">Kerja Bakti</td>
+                                            <td class="tg-0pky">
+                                                <label class="form-check-label" style="margin-right:20px" for="flexRadioDefault1">
+                                                    <input type="radio" name="aktivitas_kerjabakti" value="Y">
+                                                    Y
+                                                </label>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input type="radio" name="aktivitas_kerjabakti" value="T"> 
+                                                    T
+                                                </label>
+                                            </td>
+                                            <td class="tg-0pky">
+                                                <input type="text" name="ket_kerjabakti" class="form-control @error('ket_kerjabakti') is-invalid @enderror" value="{{ old('ket_kerjabakti') }}">
+                                    @error('ket_kerjabakti')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="tg-0pky">3</td>
+                                            <td class="tg-0pky">Rukun Kematian</td>
+                                            <td class="tg-0pky">
+                                                <label class="form-check-label" style="margin-right:20px" for="flexRadioDefault1">
+                                                    <input type="radio" name="aktivitas_rk_kematian" value="Y">
+                                                    Y
+                                                </label>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input type="radio" name="aktivitas_rk_kematian" value="T"> 
+                                                    T
+                                                </label>
+                                            </td>
+                                            <td class="tg-0pky">
+                                                <input type="text" name="ket_rk_kematian" class="form-control @error('ket_rk_kematian') is-invalid @enderror" value="{{ old('ket_rk_kematian') }}">
+                                    @error('ket_rk_kematian')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="tg-0pky">4</td>
+                                            <td class="tg-0pky">Kegiatan Keagamaan</td>
+                                            <td class="tg-0pky">
+                                                <label class="form-check-label" style="margin-right:20px" for="flexRadioDefault1">
+                                                    <input type="radio" name="aktivitas_kegiatan_kegamaan" value="Y">
+                                                    Y
+                                                </label>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input type="radio" name="aktivitas_kegiatan_kegamaan" value="T"> 
+                                                    T
+                                                </label>
+                                            </td>
+                                            <td class="tg-0pky">
+                                                <input type="text" name="ket_kegiatan_kegamaan" class="form-control @error('ket_kegiatan_kegamaan') is-invalid @enderror" value="{{ old('ket_kegiatan_kegamaan') }}">
+                                    @error('ket_kegiatan_kegamaan')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="tg-0pky">5</td>
+                                            <td class="tg-0pky">Jimpitan</td>
+                                            <td class="tg-0pky">
+                                                <label class="form-check-label" style="margin-right:20px" for="flexRadioDefault1">
+                                                    <input type="radio" name="aktivitas_jimpitan" value="Y">
+                                                    Y
+                                                </label>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input type="radio" name="aktivitas_jimpitan" value="T"> 
+                                                    T
+                                                </label>
+                                            </td>
+                                            <td class="tg-0pky">
+                                                <input type="text" name="ket_jimpitan" class="form-control @error('ket_jimpitan') is-invalid @enderror" value="{{ old('ket_jimpitan') }}">
+                                    @error('ket_jimpitan')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="tg-0pky">6</td>
+                                            <td class="tg-0pky">Arisan</td>
+                                            <td class="tg-0pky">
+                                                <label class="form-check-label" style="margin-right:20px" for="flexRadioDefault1">
+                                                    <input type="radio" name="aktivitas_arisan" value="Y">
+                                                    Y
+                                                </label>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input type="radio" name="aktivitas_arisan" value="T"> 
+                                                    T
+                                                </label>
+                                            </td>
+                                            <td class="tg-0pky">
+                                                <input type="text" name="ket_arisan" class="form-control @error('ket_arisan') is-invalid @enderror" value="{{ old('ket_arisan') }}">
+                                    @error('ket_arisan')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="tg-0pky">7</td>
+                                            <td class="tg-0pky">Lain-lain</td>
+                                            <td class="tg-0pky">
+                                                <label class="form-check-label" style="margin-right:20px" for="flexRadioDefault1">
+                                                    <input type="radio" name="aktivitas_lainlain" value="Y">
+                                                    Y
+                                                </label>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    <input type="radio" name="aktivitas_lainlain" value="T"> 
+                                                    T
+                                                </label>
+                                            </td>
+                                            <td class="tg-0pky">
+                                                <input type="text" name="ket_lainlain" class="form-control @error('ket_lainlain') is-invalid @enderror" value="{{ old('ket_lainlain') }}">
+                                    @error('ket_lainlain')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                        </table></div>
+                                </div>
+                            </div>
 
 
 
