@@ -37,8 +37,8 @@
                             <div class="form-group row">
                                 <div class="col-sm-6">
                                     <label>Desa wisma</label>
-                                    <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                    @error('nama')
+                                    <input type="text" name="desa_wisma" class="form-control @error('desa_wisma') is-invalid @enderror" value="{{ old('desa_wisma') }}">
+                                    @error('desa_wisma')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -46,8 +46,8 @@
                                 </div>
                                 <div class="col-sm-1">
                                     <label>RT</label>
-                                    <input type="text" min="1" name="jumlah" class="form-control @error('jumlah') is-invalid @enderror" value="{{ old('jumlah') }}">
-                                    @error('jumlah')
+                                    <input type="text" min="1" name="rt" class="form-control @error('rt') is-invalid @enderror" value="{{ old('rt') }}">
+                                    @error('rt')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -55,8 +55,8 @@
                                 </div>
                                 <div class="col-sm-1">
                                     <label>RW</label>
-                                    <input type="text" min="1" name="jumlah" class="form-control @error('jumlah') is-invalid @enderror" value="{{ old('jumlah') }}">
-                                    @error('jumlah')
+                                    <input type="text" min="1" name="rw" class="form-control @error('rw') is-invalid @enderror" value="{{ old('rw') }}">
+                                    @error('rw')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -64,8 +64,8 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <label>Dusun/Lingkungan</label>
-                                    <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                    @error('nama')
+                                    <input type="text" name="dusun/lingkungan" class="form-control @error('dusun/lingkungan') is-invalid @enderror" value="{{ old('dusun/lingkungan') }}">
+                                    @error('dusun/lingkungan')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -75,8 +75,8 @@
                             <div class="form-group row">
                                 <div class="col-sm-3">
                                     <label>Desa/Kelurahan</label>
-                                    <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                    @error('nama')
+                                    <input type="text" name="desa/kelurahan" class="form-control @error('desa/kelurahan') is-invalid @enderror" value="{{ old('desa/kelurahan') }}">
+                                    @error('desa/kelurahan')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -84,8 +84,8 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <label>Kecamatan</label>
-                                    <input type="text" min="1" name="jumlah" class="form-control @error('jumlah') is-invalid @enderror" value="{{ old('jumlah') }}">
-                                    @error('jumlah')
+                                    <input type="text" min="1" name="kecamatan" class="form-control @error('kecamatan') is-invalid @enderror" value="{{ old('kecamatan') }}">
+                                    @error('kecamatan')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -93,8 +93,8 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <label>Kab/Kota</label>
-                                    <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                    @error('nama')
+                                    <input type="text" name="kabupaten/kota" class="form-control @error('kabupaten/kota') is-invalid @enderror" value="{{ old('kabupaten/kota') }}">
+                                    @error('kabupaten/kota')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -102,8 +102,8 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <label>Provinsi</label>
-                                    <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
-                                    @error('nama')
+                                    <input type="text" name="provinsi" class="form-control @error('provinsi') is-invalid @enderror" value="{{ old('provinsi') }}">
+                                    @error('provinsi')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -116,8 +116,8 @@
                                 <div class="form-group row">
                                   <div class="col-8">
                                     <label>Nama kepala rumah tangga</label>
-                                    <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="text" name="nama_kepala_rumah_tangga" class="form-control @error('nama_kepala_rumah_tangga') is-invalid @enderror" value="{{old('nama_kepala_rumah_tangga') }}">
+                                    @error('nama_kepala_rumah_tangga')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -125,8 +125,8 @@
                                   </div>
                                   <div class="col-4">
                                     <label>Jumlah KK</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_kk" class="form-control @error('jumlah_kk') is-invalid @enderror" value="{{old('jumlah_kk') }}">
+                                    @error('jumlah_kk')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -136,8 +136,8 @@
                                 <div class="form-group row">
                                   <div class="col-sm-8">
                                     <label>Jumlah anggota keluarga</label>
-                                    <input type="number" min="1" id="anggota_keluarga" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" min="1" id="anggota_keluarga" name="jumlah_anggota_keluarga" class="form-control @error('jumlah_anggota_keluarga') is-invalid @enderror" value="{{old('jumlah_anggota_keluarga') }}">
+                                    @error('jumlah_anggota_keluarga')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -145,8 +145,8 @@
                                   </div>
                                   <div class="col-2">
                                     <label>Laki-laki</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_anggota_keluarga_lk" class="form-control @error('jumlah_anggota_keluarga_lk') is-invalid @enderror" value="{{old('jumlah_anggota_keluarga_lk') }}">
+                                    @error('jumlah_anggota_keluarga_lk')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -154,8 +154,8 @@
                                   </div>
                                   <div class="col-2">
                                     <label>Perempuan</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_anggota_keluarga_pr" class="form-control @error('jumlah_anggota_keluarga_pr') is-invalid @enderror" value="{{old('jumlah_anggota_keluarga_pr') }}">
+                                    @error('jumlah_anggota_keluarga_pr')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -167,8 +167,8 @@
                                 <div class="form-group row">
                                   <div class="col-2">
                                     <label>Balita</label>
-                                    <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="text" name="jumlah_balita" class="form-control @error('jumlah_balita') is-invalid @enderror" value="{{old('jumlah_balita') }}">
+                                    @error('jumlah_balita')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -176,8 +176,8 @@
                                   </div>
                                   <div class="col-1">
                                     <label>PUS</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_pus" class="form-control @error('jumlah_pus') is-invalid @enderror" value="{{old('jumlah_pus') }}">
+                                    @error('jumlah_pus')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -185,8 +185,8 @@
                                   </div>
                                   <div class="col-1">
                                     <label>WUS</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_wus" class="form-control @error('jumlah_wus') is-invalid @enderror" value="{{old('jumlah_wus') }}">
+                                    @error('jumlah_wus')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -194,8 +194,8 @@
                                   </div>
                                   <div class="col-2">
                                     <label>Buta</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_buta" class="form-control @error('jumlah_buta') is-invalid @enderror" value="{{old('jumlah_buta') }}">
+                                    @error('jumlah_buta')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -203,8 +203,8 @@
                                   </div>
                                   <div class="col-2">
                                     <label>Ibu Hamil</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_ibu_hamil" class="form-control @error('jumlah_ibu_hamil') is-invalid @enderror" value="{{old('jumlah_ibu_hamil') }}">
+                                    @error('jumlah_ibu_hamil')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -212,8 +212,8 @@
                                   </div>
                                   <div class="col-2">
                                     <label>Ibu Menyusui</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_ibu_menyusui" class="form-control @error('jumlah_ibu_menyusui') is-invalid @enderror" value="{{old('jumlah_ibu_menyusui') }}">
+                                    @error('jumlah_ibu_menyusui')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -221,8 +221,8 @@
                                   </div>
                                   <div class="col-2">
                                     <label>Lansia</label>
-                                    <input type="number" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{old('nama') }}">
-                                    @error('nama')
+                                    <input type="number" name="jumlah_lansia" class="form-control @error('jumlah_lansia') is-invalid @enderror" value="{{old('jumlah_lansia') }}">
+                                    @error('jumlah_lansia')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -287,19 +287,19 @@
                                             <label>Makanan pokok sehari-hari</label>
                                         </div>
                                         <div class="col-8 d-flex">
-                                            <label>Beras <input type="radio" name="makanan_pokok"></label>
-                                            <label>Non Beras <input type="radio" name="makanan_pokok"></label>
-                                            <input type="number" name="jumlah_jabatan" class="ml-2 form-control" placeholder="jenis">
+                                            <label>Beras <input type="radio" name="makanan_pokok_sehari_hari"></label>
+                                            <label>Non Beras <input type="radio" name="makanan_pokok_sehari_hari"></label>
+                                            <input type="number" name="makanan_pokok_sehari_hari" class="ml-2 form-control" placeholder="jenis">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-4">
-                                            <label>Mempunyai jabatan keluarga</label>
+                                            <label>Mempunyai jamban keluarga</label>
                                         </div>
                                         <div class="col-8 d-flex">
-                                            <label>Ya <input type="radio" name="jabatan_keluarga"></label>
-                                            <label>Tidak <input type="radio" name="jabatan_keluarga"></label>
-                                            <input type="number" name="jumlah_jabatan" class="ml-2 form-control" placeholder="jumlah">
+                                            <label>Ya <input type="radio" name="mempunyai_jamban_keluarga"></label>
+                                            <label>Tidak <input type="radio" name="mempunyai_jamban_keluarga"></label>
+                                            <input type="number" name="mempunyai_jamban_keluarga" class="ml-2 form-control" placeholder="jumlah">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -307,10 +307,10 @@
                                             <label>Sumber air keluarga</label>
                                         </div>
                                         <div class="col-8 d-flex">
-                                            <label>PDAM <input type="radio" name="sumber_air"></label>
-                                            <label class="ml-1">Sumur <input type="radio" name="sumber_air"></label>
-                                            <label class="ml-1">Sungai <input type="radio" name="sumber_air"></label>
-                                            <input type="number" name="jumlah_jabatan" class="ml-2 form-control" placeholder="lainnya">
+                                            <label>PDAM <input type="radio" name="sumber_air_keluarga"></label>
+                                            <label class="ml-1">Sumur <input type="radio" name="sumber_air_keluarga"></label>
+                                            <label class="ml-1">Sungai <input type="radio" name="sumber_air_keluarga"></label>
+                                            <input type="number" name="sumber_air_keluarga" class="ml-2 form-control" placeholder="lainnya">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -318,8 +318,8 @@
                                             <label>Memiliki tempat pembuangan sampah</label>
                                         </div>
                                         <div class="col-8">
-                                            <label>Ya <input type="radio" name="pembuangan_sampah"></label>
-                                            <label>Tidak <input type="radio" name="pembuangan_sampah"></label>
+                                            <label>Ya <input type="radio" name="memiliki_tempat_pembuangan_sampah"></label>
+                                            <label>Tidak <input type="radio" name="memiliki_tempat_pembuangan_sampah"></label>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -327,8 +327,8 @@
                                             <label>Memiliki saluran pembuangan air limbah</label>
                                         </div>
                                         <div class="col-8">
-                                            <label>Ya <input type="radio" name="pembuangan_air"></label>
-                                            <label>Tidak <input type="radio" name="pembuangan_air"></label>
+                                            <label>Ya <input type="radio" name="mempunyai_saluran_pembuangan_air_limbah"></label>
+                                            <label>Tidak <input type="radio" name="mempunyai_saluran_pembuangan_air_limbah"></label>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -336,8 +336,8 @@
                                             <label>Menempel stiker P4K</label>
                                         </div>
                                         <div class="col-8">
-                                            <label>Ya <input type="radio" name="stiker_p4k"></label>
-                                            <label>Tidak <input type="radio" name="stiker_p4k"></label>
+                                            <label>Ya <input type="radio" name="menempek_stiker_p4k"></label>
+                                            <label>Tidak <input type="radio" name="menempek_stiker_p4k"></label>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -356,7 +356,7 @@
                                         <div class="col-8 d-flex">
                                             <label>Ya <input type="radio" name="aktifitas_up2k"></label>
                                             <label>Tidak <input type="radio" name="aktifitas_up2k"></label>
-                                            <input type="number" name="jumlah_jabatan" class="ml-2 form-control" placeholder="jenis usaha">
+                                            <input type="number" name="aktifitas_up2k" class="ml-2 form-control" placeholder="jenis usaha">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -364,8 +364,8 @@
                                             <label>Aktifitas kegiatan usaha kesehatan lingkungan</label>
                                         </div>
                                         <div class="col-8">
-                                            <label>Ya <input type="radio" name="kesehatan_lingkungan"></label>
-                                            <label>Tidak <input type="radio" name="kesehatan_lingkungan"></label>
+                                            <label>Ya <input type="radio" name="aktifitas_kegiatan_usaha_kesehatan_lingkungan"></label>
+                                            <label>Tidak <input type="radio" name="aktifitas_kegiatan_usaha_kesehatan_lingkungan"></label>
                                         </div>
                                     </div>
                                 </div>

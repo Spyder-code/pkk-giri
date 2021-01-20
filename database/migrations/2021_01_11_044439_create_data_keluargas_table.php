@@ -16,7 +16,8 @@ class CreateDataKeluargasTable extends Migration
         Schema::create('data_keluargas', function (Blueprint $table) {
             $table->id();
             $table->string('desa_wisma');
-            $table->string('rt/rw');
+            $table->string('rt');
+            $table->string('rt');
             $table->string('dusun/lingkungan');
             $table->string('desa/kelurahan');
             $table->string('kecamatan');
